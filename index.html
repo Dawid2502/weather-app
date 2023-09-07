@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="parameters-container">
+            <div class="weather-data">
+                <div class="parameter-box humidity-box">
+                    <p class="param-name">Wilgotność</p>
+                    <img src="./image/humidity.png" alt="kropla">
+                    <p class="param-value humidity">---</p>
+                </div>
+                <div class="parameter-box wind-speed-box">
+                    <p class="param-name">Prędkość wiatru</p>
+                    <img src="./image/wind.png" alt="kropla">
+                    <p class="param-value wind-speed">---</p>
+                </div>
+                <div class="parameter-box pressure-box">
+                    <p class="param-name">Ciśnienie</p>
+                    <img src="./image/pressure.png" alt="kropla">
+                    <p class="param-value pressure">---</p>
+                </div>
+            </div>
+            <div class="min-max-temp">
+                <div class="temp-box min-temp-box">
+                    <p class="param-name">Min. temperatura</p>
+                    <img src="./image/cold-159379_640.png" alt="termometr">
+                    <p class="temp-value min-temp">---</p>
+                </div>
+                <div class="temp-box max-temp-box">
+                    <p class="param-name">Max. temperatura</p>
+                    <img src="./image/hot-159386_640.png" alt="termometr">
+                    <p class="temp-value max-temp">---</p>
+                </div>
+            </div>
+        </div>
+        <div class="actual-temp">
+            <p class="actual-temp-name">Temp. Aktualna</p>
+            <p class="actual-value">---</p>
+            <img src="./image/cloud.png" alt="chmura" class="clouds">
+
+        </div>
+    </div>
+    <div class="choose-city">
+        <p class="city-name"> Miasto</p>
+        <input type="text" placeholder="Wpisz miasto">
+        <button class="get-city-btn">Znajdź</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

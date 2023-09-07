@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-image: url(../image/thunderstorm-3440450_1920.jpg);
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.param-name,
+.param-value {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.param-name {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.param-value {
+  font-size: 18px;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin-bottom: 20px;
+  background: rgba(163, 159, 159, 0.5);
+  border-radius: 10px;
+}
+.weather-container .parameters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.weather-container .parameters-container .weather-data {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.weather-container .parameters-container .weather-data .parameter-box {
+  position: relative;
+  margin: 5px;
+  width: 110px;
+  height: 135px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+.weather-container .parameters-container .weather-data .parameter-box img {
+  width: 30px;
+}
+.weather-container .parameters-container .weather-data .parameter-box .param-value {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  width: 100%;
+}
+.weather-container .parameters-container .weather-data .pressure-box img {
+  margin: 10px;
+}
+.weather-container .parameters-container .min-max-temp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.weather-container .parameters-container .min-max-temp .temp-box {
+  margin: 15px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.weather-container .parameters-container .min-max-temp .temp-box img {
+  height: 60px;
+}
+.weather-container .parameters-container .min-max-temp .temp-box .temp-value {
+  padding: 10px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.weather-container .actual-temp {
+  margin: 20px;
+  width: 260px;
+  height: 280px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+.weather-container .actual-temp .actual-temp-name {
+  padding: 40px 10px 20px 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.weather-container .actual-temp .actual-value {
+  padding: 15px 20px;
+  background: none;
+  font-size: 56px;
+}
+.weather-container .actual-temp .actual-temp-name,
+.weather-container .actual-temp .actual-value {
+  font-weight: bold;
+}
+.weather-container .actual-temp img {
+  margin: 15px;
+  width: 100px;
+}
+
+.choose-city {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.choose-city .city-name {
+  padding: 20px 0;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.choose-city input {
+  margin: 10px 20px;
+  padding: 10px 20px;
+  width: 260px;
+}
+.choose-city .get-city-btn {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+@media (min-width: 768px) {
+  body {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .param-name {
+    font-size: 14px;
+  }
+  .weather-container {
+    align-items: start;
+    flex-direction: row;
+  }
+  .weather-container .parameters-container {
+    flex-direction: column;
+  }
+  .weather-container .parameters-container .weather-data .parameter-box {
+    margin: 20px;
+    width: 120px;
+  }
+  .weather-container .parameters-container .min-max-temp .temp-box {
+    margin: 15px;
+  }
+  .weather-container .actual-temp {
+    width: 220px;
+    height: 337px;
+  }
+  .weather-container .actual-temp .actual-value {
+    padding: 20px;
+  }
+  .weather-container .actual-temp img {
+    margin: 30px;
+  }
+  .choose-city {
+    flex-direction: row;
+    width: 740px;
+  }
+}/*# sourceMappingURL=style.css.map */
