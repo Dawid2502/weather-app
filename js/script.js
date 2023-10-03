@@ -11,10 +11,10 @@ const icon = document.querySelector('.clouds');
 const getDataBtn = document.querySelector('.get-city-btn');
 
 const apiKey = '45fb32bf204f0ffe8d5348224ac2d6cc';
-
+const getCity = city.value || 'Kępno';
 
 const getWeatherData = () => {
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=${apiKey}&units=metric`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${getCity}&appid=${apiKey}&units=metric`;
     var iconurl;
 
     fetch(apiUrl)
@@ -38,7 +38,7 @@ const getWeatherData = () => {
             alert('Nie udało się pobrać danych pogodowych.');
         });
 
-        cityName.textContent = city.value;
+        cityName.textContent = getCity;
         city.value = '';
 }
 
