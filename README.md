@@ -67,4 +67,4 @@ function getWeatherData () {
 Adding map 
 
 ## Live
-[https://shiny-dragon-33b8f0.netlify.app/](https://tangerine-hotteok-0d3b7d.netlify.app/)https://tangerine-hotteok-0d3b7d.netlify.app/
+https://tangerine-hotteok-0d3b7d.netlify.app/
